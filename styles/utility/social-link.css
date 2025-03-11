@@ -1,0 +1,123 @@
+/*Principal*/
+#social-links {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+#social-links li {
+  position: relative;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 50%;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Ícones no hover */
+.social-link:hover {
+  background-image: none; /* Remove a imagem normal */
+}
+
+.social-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--shape-stroke);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+.social-link:hover::after {
+  opacity: 1;
+}
+
+
+/*imagem do logo*/
+.social-discord {
+  background-image: url("../../assets/icons/discord.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-facebook {
+  background-image: url("../../assets/icons/facebook.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-instagram {
+  background-image: url("../../assets/icons/instagram.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-twitter {
+  background-image: url("../../assets/icons/twitter.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-whatsapp {
+  background-image: url("../../assets/icons/whatsapp.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-mail {
+  background-image: url("../../assets/icons/mail.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-discord:hover::after {
+  background-image: url("../../assets/icons-hover/discord.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-facebook:hover::after {
+  background-image: url("../../assets/icons-hover/facebook.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-instagram:hover::after {
+  background-image: url("../../assets/icons-hover/instagram.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-twitter:hover::after {
+  background-image: url("../../assets/icons-hover/twitter.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-whatsapp:hover::after {
+  background-image: url("../../assets/icons-hover/whatsapp.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-mail:hover::after {
+  background-image: url("../../assets/icons-hover/mail.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}

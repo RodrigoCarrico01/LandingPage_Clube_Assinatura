@@ -98,3 +98,6 @@ button{
   font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
 }
+ul[role="list"]{
+  list-style: none;
+}
