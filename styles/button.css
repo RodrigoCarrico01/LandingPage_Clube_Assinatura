@@ -1,0 +1,56 @@
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: .5rem;
+  padding-inline: 1.25rem;
+  height: 2.5rem;
+
+  border-radius: .5rem;
+
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform .3s ease-in-out;
+}
+
+/* Botão primário */
+.button-primary {
+  background-color: var(--pink-dark);
+}
+
+.button-secondary {
+  background-color: var(--blue-dark);
+}
+.button-primary:hover {
+  background-color: var(--pink-base);
+}
+
+.button-secondary:hover {
+  background-color: var(--blue-base);
+}
+
+button:hover{
+  transform: scale(1.02);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 8rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity .5s ease-out;
+}
+
+/* Ativando o efeito de hover */
+button:hover::before {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+

@@ -91,3 +91,10 @@ a{
 a:hover{
   color: var(--text-body);
 }
+button{
+  color: var(--text-title);
+  border: 0;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+}
