@@ -48,10 +48,12 @@ html{
   line-height: auto;
   letter-spacing: 0;
   color: var(--text-body);
+  overflow-x: hidden;
 }
 
 body{
   background-color: var(--shape-background);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4{
