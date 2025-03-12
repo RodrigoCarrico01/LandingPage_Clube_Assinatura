@@ -4,6 +4,18 @@
 .mobile-only{
   display: none;
 }
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; 
+  background: linear-gradient(
+    rgba(21, 0, 30, 0.8), 
+    rgba(10, 0, 20, 0.7) 
+  );
+  z-index: 0;
+}
 
 .hero-bg{
   background-image: url(../../assets/images/hero-background.png);
