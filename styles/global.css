@@ -103,5 +103,17 @@ ul[role="list"]{
 }
 img{
   max-width: 100%;
-  display: inline-block;
+}
+
+@media (width<=70em){
+  :root{
+    --fs-2xl: 1.75rem; /*Antes 48px, agora 28px*/
+    --fs-xl: 1.5rem; /*Antes 40px, agora 24px*/
+    --fs-lg: 1rem; /*Antes 32px, agora 16px*/
+    --fs-md: .875rem; /*Antes 20px, agora 14px*/
+    --fs-base: .875rem; /*Antes 16px, agora 14px*/
+    --fs-sm: .875rem; /*14px*/
+    --fs-xs: .75rem; /*12px*/
+    --fs-2xs: .625rem; /*10px*/
+  }
 }

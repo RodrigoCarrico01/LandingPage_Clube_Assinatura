@@ -1,10 +1,28 @@
 .desktop-only{
   display: initial;
 }
+.mobile-only{
+  display: none;
+}
 
+.hero-bg{
+  background-image: url(../../assets/images/hero-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 59.25rem;
+  animation: fadeInUp 1.2s ease-out;
+
+}
 @media (width <= 70em){
 
   .desktop-only{
     display: none;
+  }
+  .mobile-only{
+    display: initial;
+  }
+  .hero-bg{
+    height: 29rem;
   }
 }
