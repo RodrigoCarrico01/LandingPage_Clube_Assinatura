@@ -17,9 +17,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    & h2{
-      width: fit-content;
-    }
+
   }
 
   & .kit-description {
@@ -112,6 +110,27 @@
     transition: 400ms ease-in-out;
   }
 
+  & .arrow-text {
+    position: absolute;
+  }
+  & .book-text {
+    left: 10rem;
+    top: 15rem;
+    transition: 400ms ease-in-out;
+
+    }
+  & .pin-text {
+      bottom: 30rem;
+      left: 10rem;
+      transition: 400ms ease-in-out;
+    }
+  & .bookmark-text {
+      bottom: 15rem;
+      right: 10rem;
+      transition: 400ms ease-in-out;
+    }
+
+
 }
 
 .element-book:hover {
@@ -139,7 +158,7 @@
     }
 
     & .pin-arrow {
-      bottom: 16rem;
+      bottom: 15rem;
       left: 0;
       transform: translateX(-6rem);
     }
@@ -147,8 +166,25 @@
       right: -8rem;
       bottom: 9rem;
     }
+    & .book-text {
+      left: -7rem;
+      top: 5rem;
+      transform: translateX(-4rem);
+      }
+    & .pin-text {
+        bottom: 25rem;
+        left: -2rem;
+        transform: translateX(-6rem);
+      }
+    & .bookmark-text {
+        bottom: 6.5rem;
+        right: -3rem;
+      }
+  
   }
 }
+
+
 
 @media (width >= 120em){
   .animation-book{
@@ -243,6 +279,25 @@
       right: 10rem;
       bottom: 6rem;
     }
+    & .book-text {
+      font-size: 0.625rem;
+      left: 10rem;
+      top: 7rem;
+      transition: 400ms ease-in-out;
+  
+      }
+    & .pin-text {
+        font-size: 0.625rem;
+        bottom: 10rem;
+        left: 10rem;
+        transition: 400ms ease-in-out;
+      }
+    & .bookmark-text {
+        font-size: 0.625rem;
+        bottom: 10rem;
+        right: 10rem;
+        transition: 400ms ease-in-out;
+      }
   }
 
   .element-book:hover {
@@ -278,6 +333,20 @@
         right: 2rem;
         bottom: 4rem;
       }
+      & .book-text {
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        }
+      & .pin-text {
+          bottom: 8rem;
+          left: 1rem;
+          transform: translateX(0);
+        }
+      & .bookmark-text {
+          bottom: 2rem;
+          right: 1rem;
+        }
     }
   }
 }
