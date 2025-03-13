@@ -14,15 +14,16 @@
 
   & .kit-title {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    & h2{
+      width: fit-content;
+    }
   }
 
   & .kit-description {
     --padding-bottom: 5.5rem;
-    font-size: 1rem;
     line-height: 1.4rem;
     margin-top: 0.32rem;
     padding-bottom: var(--padding-bottom);
@@ -143,8 +144,8 @@
       transform: translateX(-6rem);
     }
     & .bookmark-arrow {
-      right: -5rem;
-      bottom: 10rem;
+      right: -8rem;
+      bottom: 9rem;
     }
   }
 }
@@ -157,7 +158,13 @@
 }
 @media (119em >= width >= 100em){
   .animation-book{
-    width:60%;
+    width: 67%;
+    margin-inline: auto;
+  }
+}
+@media (99em >= width >= 90em){
+  .animation-book{
+    width: 70%;
     margin-inline: auto;
   }
 }
@@ -268,8 +275,8 @@
         transform: translateX(-0.5rem);
       }
       & .bookmark-arrow {
-        right: 0;
-        bottom: 0;
+        right: 2rem;
+        bottom: 4rem;
       }
     }
   }

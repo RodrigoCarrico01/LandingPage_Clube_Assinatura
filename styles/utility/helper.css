@@ -25,7 +25,7 @@
   animation: fadeInUp 1.2s ease-out;
 
 }
-@media (width <= 70em){
+@media (width <= 60em){
 
   .desktop-only{
     display: none;
