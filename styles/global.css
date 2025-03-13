@@ -27,15 +27,6 @@
   /*TIPOGRAFIA*/
   --ff-sans: 'Raleway', sans-serif;
 
-  --fs-2xl: 3rem; /*48px*/
-  --fs-xl: 2.5rem; /*40px*/
-  --fs-lg: 2rem; /*32px*/
-  --fs-md: 1.25rem; /*20px*/
-  --fs-base: 1rem; /*16px*/
-  --fs-sm: .875rem; /*14px*/
-  --fs-xs: .75rem; /*12px*/
-  --fs-2xs: .625rem; /*10px*/
-
   --fw-bold: 700;
   --fw-medium: 500;
   --fw-regular: 400;
@@ -44,7 +35,7 @@
 html{
   font-family: var(--ff-sans);
   font-weight: var(--fw-regular);
-  font-size: var(--fs-base);
+  font-size: 1rem;
   line-height: auto;
   letter-spacing: 0;
   color: var(--text-body);
@@ -62,33 +53,11 @@ h1, h2, h3, h4{
   font-weight: var(--fw-bold);
 }
 
-/*TITLE LG*/
-h1{
-  font-size: var(--fs-2xl);
-}
-/*TITLE MD*/
-h2{
-  font-size: var(--fs-lg);
-}
-/*TITLE SM*/
-h3{
-  font-size: var(--fs-lg);
-}
-/*TITLE XS*/
-h4{
-  font-size: var(--fs-base);
-}
-/*SUBTITLE*/
-h5{
-  font-size: var(--fs-lg);
-  line-height: 2;
-  font-weight: var(--fw-medium);
-}
 a{
   text-decoration: none;
   color: var(--blue-light);
   font-weight: var(--fw-medium);
-  font-size: var(--fs-sm);
+  font-size: inherit;
 }
 a:hover{
   color: var(--text-body);
@@ -97,7 +66,7 @@ button{
   color: var(--text-title);
   border: 0;
   font-family: var(--ff-sans);
-  font-size: var(--fs-sm);
+  font-size: inherit;
   font-weight: var(--fw-bold);
 }
 ul[role="list"]{
@@ -105,17 +74,4 @@ ul[role="list"]{
 }
 img{
   max-width: 100%;
-}
-
-@media (width<= 79em){
-  :root{
-    --fs-2xl: 1.75rem; /*Antes 48px, agora 28px*/
-    --fs-xl: 1.5rem; /*Antes 40px, agora 24px*/
-    --fs-lg: 1rem; /*Antes 32px, agora 16px*/
-    --fs-md: .875rem; /*Antes 20px, agora 14px*/
-    --fs-base: .875rem; /*Antes 16px, agora 14px*/
-    --fs-sm: .875rem; /*14px*/
-    --fs-xs: .75rem; /*12px*/
-    --fs-2xs: .625rem; /*10px*/
-  }
 }
