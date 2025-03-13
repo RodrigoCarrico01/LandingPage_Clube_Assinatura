@@ -12,12 +12,11 @@
   text-align: center;
   padding-top: var(--padding-top);
 
-  & .kit-title {
+  & .kit-title {    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
   }
 
   & .kit-description {
@@ -36,6 +35,7 @@
 .element-book {
   --height: 57.5rem;
   height: var(--height);
+  position: relative;
 
   & .animation-book {
     position: relative;
@@ -43,7 +43,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 1px solid red;
   }
  
   & .book {
@@ -221,6 +220,12 @@
 
 /*TAMANHOS*/
 @media (width <= 79em){
+  .kit-title{
+    & h2{
+      font-size: 1.5rem;
+    }
+  }
+
   .kit-wrapper{
     --padding-top: 6.5rem;
     & .kit-description{
@@ -334,7 +339,7 @@
         bottom: 4rem;
       }
       & .book-text {
-        left: 0;
+        left: 1rem;
         top: 0;
         transform: translateX(0);
         }

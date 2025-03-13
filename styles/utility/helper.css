@@ -15,7 +15,32 @@
   );
   z-index: 0;
 }
+.blur-background {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 25rem; 
+  height: 25rem; 
+  border-radius: 50%;
+  
+  opacity: 0.9;
+  background: var(--pink-low, #3f0f41);
+  filter: blur(300px);
+  transform: translate(-50%, -50%); 
+}
 
+.book-kit-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    rgba(10, 0, 20, 0.7),
+    rgba(21, 0, 30, 0.3)
+  );
+  z-index: -2;
+}
 .hero-bg{
   background-image: url(../../assets/images/hero-background.png);
   background-position: center;
@@ -24,6 +49,12 @@
   height: 59.25rem;
   animation: fadeInUp 1.2s ease-out;
 
+}
+@media (width <= 79em){
+  .blur-background{
+    width: 10rem; 
+    height: 10rem; 
+  }
 }
 @media (width <= 60em){
 

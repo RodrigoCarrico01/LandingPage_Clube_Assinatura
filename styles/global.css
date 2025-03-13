@@ -68,7 +68,7 @@ h1{
 }
 /*TITLE MD*/
 h2{
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
 }
 /*TITLE SM*/
 h3{
