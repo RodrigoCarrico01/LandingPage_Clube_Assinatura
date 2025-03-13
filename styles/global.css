@@ -40,6 +40,7 @@ html{
   letter-spacing: 0;
   color: var(--text-body);
   overflow-x: hidden;
+  /* transform: scale(0.5); for testing only */
 }
 
 body{

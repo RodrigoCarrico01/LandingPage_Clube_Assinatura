@@ -13,7 +13,7 @@
   height: 59.25rem;
   animation: fadeInUp 1.2s ease-out;
 }
-@media (width <= 60em){
+@media (width <= 70em){
 
   .desktop-only{
     display: none;
