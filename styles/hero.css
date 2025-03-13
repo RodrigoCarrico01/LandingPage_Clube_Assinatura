@@ -176,7 +176,7 @@
 
 
 
-@media (width <= 70em){
+@media (width <= 60em){
   .hero-top{
     --padding-inline-base: 1.25rem;
     --max-width: 375px;

@@ -219,7 +219,7 @@
 
 
 /*TAMANHOS*/
-@media (width <= 79em){
+@media (width <= 70em){
   .kit-title{
     & h2{
       font-size: 1.5rem;
