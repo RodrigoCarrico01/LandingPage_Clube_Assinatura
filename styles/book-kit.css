@@ -10,11 +10,13 @@
   position: relative;
   text-align: center;
   padding-top: var(--padding-top);
-  gap: 1rem;
 
   & .kit-title {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 
   & .kit-description {
@@ -24,4 +26,9 @@
     margin-top: 0.32rem;
     padding-bottom: var(--padding-bottom);
   }
+  & .star-image {
+    fill: var(--pink-base, #9547a5);
+    filter: drop-shadow(0px 0px 28px rgba(143, 59, 158, 0.5));
+  }
+
 }
