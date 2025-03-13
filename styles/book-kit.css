@@ -1,0 +1,27 @@
+.book-kit{
+  --padding-inline-base: 26rem;
+  --max-width: 80em;
+  max-width: var(--max-width);
+  width: calc(100% - var(--padding-inline-base) * 2);
+  margin-inline: auto;
+}
+.kit-wrapper {
+  --padding-top: 14.69rem;
+  position: relative;
+  text-align: center;
+  padding-top: var(--padding-top);
+  gap: 1rem;
+
+  & .kit-title {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  & .kit-description {
+    --padding-bottom: 5.5rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: 0.32rem;
+    padding-bottom: var(--padding-bottom);
+  }
+}
