@@ -107,7 +107,7 @@ img{
   max-width: 100%;
 }
 
-@media (width<=70em){
+@media (width<=79em){
   :root{
     --fs-2xl: 1.75rem; /*Antes 48px, agora 28px*/
     --fs-xl: 1.5rem; /*Antes 40px, agora 24px*/
