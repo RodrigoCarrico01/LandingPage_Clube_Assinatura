@@ -41,7 +41,9 @@
 
     }
     & p{
+      color: var(--text-label);
       font-size: 1.25rem;
+      font-weight: 300;
     }
   }
   

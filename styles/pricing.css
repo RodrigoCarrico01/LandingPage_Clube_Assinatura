@@ -33,6 +33,7 @@
   gap: 1rem;
   margin-inline: auto;
   position: relative;
+  padding-top: 8.6875rem;
   
 
   & .pricing-card{
@@ -71,6 +72,7 @@
             flex-direction: row;
             font-size: .875rem;
             color: var(--text-label);
+            font-weight: 300;
           }
         }
       }
@@ -126,6 +128,31 @@
       z-index: 2;
       background-color: var(--shape-hover);
       scale: 1.02;
+      & .big-star-up{
+        transform: rotate(25deg);
+      }
+      & .small-star-up{
+        transform: rotate(-25deg);
+      }
+    }
+    & header{
+      position: relative;
+      & .big-star-up{
+        position: absolute;
+        width: 1.625rem;
+        height: 1.625rem;
+        top:-60%;
+        left: -30%;
+        transition: transform 0.5s ease-in-out;
+      }
+      & .small-star-up{
+        position: absolute;
+        width: .8125rem;
+        height: .8125rem;
+        top:-30%;
+        left: -35%;
+        transition: transform 0.5s ease-in-out;
+      }
     }
   }
   & .semestral{
@@ -136,6 +163,16 @@
       background-color: var(--shape-hover);
       scale: 1.02;
     }
+    & header{
+      position: relative;
+      & .bunny{
+        position: absolute;
+        width: 2.8125rem;
+        height: 3.125rem;
+        top: -73%;
+      }
+    }
+
   }
   & .anual{
     z-index: 0;
@@ -148,8 +185,34 @@
       z-index: 2;
       background-color: var(--shape-hover);
       scale: 1.02;
+      & .big-star-down{
+        transform: rotate(25deg);
+      }
+      & .small-star-down{
+        transform: rotate(-25deg);
+      }
+    }
+    & ul{
+      position: relative;
+      & .big-star-down{
+        position: absolute;
+        width: 1.625rem;
+        height: 1.625rem;
+        bottom:-100%;
+        right: -40%;
+        transition: transform 0.5s ease-in-out;
+      }
+      & .small-star-down{
+        position: absolute;
+        width: .8125rem;
+        height: .8125rem;
+        bottom:-110%;
+        right: -20%;
+        transition: transform 0.5s ease-in-out;
+      }
     }
   }
+
 }
 
 
