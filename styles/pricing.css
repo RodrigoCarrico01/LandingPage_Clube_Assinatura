@@ -190,7 +190,19 @@
   .pricing-card-wrapper{
     display: flex;
     flex-direction: column;
-    & .pricing-card{  
+    align-items: center;
+
+    & .pricing-card{
+      position: relative;
+      animation: fadeInUp 1s ease both;
+      animation-fill-mode: forwards;
+      
+      & .mensal, & .semestral, & .anual {
+        position: relative;
+        opacity: 1;
+        animation: fadeInUp 1s ease both;
+      }
+  
       & .bottom{
         & .pricing-card-content{
           font-size: .65rem;
@@ -201,4 +213,13 @@
 }
 
 
-
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
