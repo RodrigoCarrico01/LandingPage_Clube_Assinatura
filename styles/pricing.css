@@ -17,6 +17,7 @@
 
   display: flex;
   flex-direction: column;
+
 }
 
 .pricing-title{
@@ -31,9 +32,12 @@
   justify-content: space-around;
   gap: 1rem;
   margin-inline: auto;
+  position: relative;
   
 
   & .pricing-card{
+    transition: scale 0.5s ease-in-out, background-color 0.5s ease-in-out;
+
     padding-top: 2rem;
     padding-inline: 2rem;
     padding-bottom: 1.75rem;
@@ -43,7 +47,6 @@
     align-items: center;
     
     border: 1px solid var(--shape-stroke);
-    background-color: #000f1f77;
     border-radius: 1.5rem;
 
     width:18rem;
@@ -73,6 +76,7 @@
       }
   
     }
+    
     & .bottom{
       display: flex;
       flex-direction: column;
@@ -93,13 +97,12 @@
           }
         }
       }
+
   
       & .button-secondary, & .button-primary{
-        width: 100%;
+        margin-inline:auto;
       }
     }
-
-
   }
 
   & .mensal h4, & .anual h4{
@@ -110,6 +113,76 @@
   & .semestral h4{
     color: var(--pink-light);
     font-size: 1rem;
+  }
+
+  & .mensal{
+    z-index: 0;
+    background-color: var(--shape-base);
+    position: absolute;
+    opacity: 0;
+    animation: fadeInLeft 1s ease both;
+    animation-fill-mode: forwards;
+    &:hover{
+      z-index: 2;
+      background-color: var(--shape-hover);
+      scale: 1.02;
+    }
+  }
+  & .semestral{
+    z-index: 1;
+    background-color: var(--shape-base);
+    &:hover{
+      z-index: 2;
+      background-color: var(--shape-hover);
+      scale: 1.02;
+    }
+  }
+  & .anual{
+    z-index: 0;
+    background-color: var(--shape-base);
+    position: absolute;
+    opacity: 0;
+    animation: fadeInRight 1s ease both;
+    animation-fill-mode: forwards;
+    &:hover{
+      z-index: 2;
+      background-color: var(--shape-hover);
+      scale: 1.02;
+    }
+  }
+}
+
+
+.pricing-card.mensal,
+.pricing-card.anual {
+  animation-play-state: paused;
+}
+
+.pricing-container:hover .pricing-card.mensal,
+.pricing-container:hover .pricing-card.anual {
+  animation-play-state: running;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(0) translateY(0) rotate(0);
+    opacity: 0.9;
+    
+  }
+  to {
+    transform: translateX(-100%) translateY(15%) rotate(-8deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(0) translateY(0) rotate(0);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateX(100%) translateY(15%) rotate(8deg);
+    opacity: 1;
   }
 }
 
@@ -122,11 +195,10 @@
         & .pricing-card-content{
           font-size: .65rem;
         }
-        & .button-secondary, & .button-primary{
-          width: 100%;
-        }
       }
     }
-  }
-  
+  } 
 }
+
+
+
