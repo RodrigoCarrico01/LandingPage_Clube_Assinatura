@@ -1,6 +1,6 @@
 .pricing-container{
   --padding-top: 14.6875rem;
-  --padding-bottom: 25.625rem;
+  --padding-bottom: 24rem;
 
   --padding-inline-base: 0;
   --max-width: 80em;
@@ -73,7 +73,7 @@
             flex-direction: row;
             font-size: .875rem;
             color: var(--text-label);
-            font-weight: 300;
+            font-weight: 500;
           }
         }
       }
@@ -84,7 +84,7 @@
       display: flex;
       flex-direction: column;
       margin-top: auto;
-      gap: 1.5rem;
+      gap: 2rem;
       & .pricing-card-content{
         font-size: .75rem;
         display: flex;
@@ -254,6 +254,7 @@
   .pricing-container{
     --padding-top: 6.5rem;
     --padding-bottom: 6.5rem;
+    --max-width: 375px;
   }
   .pricing-card-wrapper{
     --padding-top: 3rem;

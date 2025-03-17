@@ -14,6 +14,15 @@
   justify-content: center;
   height: 59.25rem;
 }
+.footer-bgc{
+  z-index: -1;
+  position: absolute;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25.9375rem;
+}
 @media (width <= 70em){
 
   .desktop-only{
@@ -25,4 +34,8 @@
   .hero-bgc{
     height: 29rem;
   }
+  .footer-bgc{
+    height: 40rem;
+  }
+
 }
