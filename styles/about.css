@@ -114,6 +114,7 @@
 @media (width <= 70em){
   .about-container{
     --padding-inline-base: 1.25rem;
+    --max-width: 375px;
 
   }
   .about{

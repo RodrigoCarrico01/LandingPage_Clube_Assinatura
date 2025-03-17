@@ -1,17 +1,20 @@
 .kit-container{
+  --padding-top: 14.6875rem;
+  --padding-bottom: 17.375rem;
   --padding-inline-base: 0;
-  --max-width: 90em;
+  --max-width: 80em;
   max-width: var(--max-width);
   width: calc(100% - var(--padding-inline-base) * 2);
   margin-inline: auto;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
 }
 
 .kit{
-  --padding-top: 14.6875rem;
-  --padding-bottom: 19.5625rem;
-
-  padding-top: var(--padding-top);
-  padding-bottom: var(--padding-bottom);
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
 
   & .kit-title{
     display: flex;
@@ -25,6 +28,8 @@
     & img{
       width: 2rem;
       height: 2rem;
+      fill: var(--pink-base, #9547a5);
+      filter: drop-shadow(0px 0px 28px rgba(143, 59, 158, 0.5));
     }
   }
 
@@ -34,14 +39,172 @@
     justify-content: center;
     text-align: center;
     margin-top: .3125rem;
+    margin-bottom: 5.5rem;
+  }
+}
+
+.kit-images-wrapper{
+  height: 57.5rem;
+  & .kit-images-animation{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+
+    & .book {
+      position: absolute;
+      width: 29.1875rem;
+      height: 38.5625rem;
+    }
+
+    & .pin {
+      position: absolute;
+      width: 13.875rem;
+      height: 15.875rem;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transition: 400ms ease-in-out;
+    }
+        
+    & .bookmark-yellow {
+      position: absolute;
+      width: 10.75rem;
+      height: 33.5rem;
+      z-index: -1;
+      top: 20%;
+      right: 35%;
+      transition: 400ms ease-in-out;
+    }
+
+    & .bookmark-purple {
+      position: absolute;
+      width: 10.75rem;
+      height: 33.5rem;
+      z-index: -2;
+      top: 20%;
+      right: 35%;
+      transition: 400ms ease-in-out;
+    }
+      
+    & .book-arrow {
+      position: absolute;
+      width: 10.9375rem;
+      height: 1.875rem;
+      z-index: -1;
+      top: 50%;
+      left: 40%;
+      transition: 400ms ease-in-out;
+    } 
+    
+    & .pin-arrow {
+      position: absolute;
+      width: 6.5625rem;
+      height: 7.9375rem;
+      z-index: -1;
+      top: 50%;
+      left: 40%;
+      transition: 400ms ease-in-out;
+    }
+
+    & .bookmark-arrow {
+      position: absolute;
+      width: 9.0625rem;
+      height: 9.5rem;
+      z-index: -1;
+      top: 50%;
+      right: 40%;
+      transition: 400ms ease-in-out;
+    }
+
+    & .arrow-text {
+      position: absolute;
+      z-index: -1;
+      transition: 400ms ease-in-out;
+    }
+    & .book-text{
+      top: 50%;
+      left: 50%;
+    }
+    & .pin-text{
+      top: 50%;
+      left: 50%;
+    }
+
+    & .bookmark-text{
+      top: 50%;
+      right: 40%;
+    }
+
+  }
+}
+
+.kit-images-wrapper:hover{
+  & .kit-images-animation{
+    & .pin {
+      left: 21%;
+      top: 65%;
+      transform: rotate(-10deg);
+    }
+        
+    & .bookmark-yellow {
+      top: 5%;
+      right: 23%;
+      transform: rotate(12deg);
+    }
+
+    & .bookmark-purple {
+      top: 18%;
+      right: 15%;
+      transform: rotate(22deg);
+    }
+      
+    & .book-arrow {
+      top: 14%;
+      left: 22%;
+    } 
+    
+    & .pin-arrow {
+      left: 16%;
+      top: 58%;
+    }
+
+    & .bookmark-arrow {
+      top: 70%;
+      right: 20%;
+    }
+
+    & .book-text{
+      top: 10%;
+      left: 15%;
+    }
+    & .pin-text{
+      top: 54%;
+      left: 14%;
+    }
+
+    & .bookmark-text{
+      top: 88%;
+      right: 23%;
+    }
+
   }
 }
 
 
+
+
 @media (width <= 70em){
-  .kit{
+  .kit-container{
+    --padding-inline-base: 0;
+    --max-width: 375px;
     --padding-top: 6.5rem;
-    --padding-bottom: 10rem;
+    --padding-bottom: 9.5rem;
+  }
+  
+  .kit{
   
     & .kit-title{
       & h2{
@@ -56,6 +219,114 @@
     & .kit-description{
       font-size: .875rem;
       margin-top: .3125rem;
+      margin-bottom: 0;
+    }
+  }
+
+
+  .kit-images-wrapper{
+    height: 19.9375rem;
+    & .kit-images-animation{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  
+      & .book {
+        position: absolute;
+        width: 9.824375rem;
+        height: 12.98rem;
+      }
+  
+      & .pin {
+        position: absolute;
+        width: 4.680625rem;
+        height: 5.3375rem;
+      }
+          
+      & .bookmark-yellow {
+        position: absolute;
+        width: 3.65rem;
+        height: 11.3075rem;
+      }
+  
+      & .bookmark-purple {
+        position: absolute;
+        width: 3.65rem;
+        height: 11.3075rem;
+      }
+        
+      & .book-arrow {
+        position: absolute;
+        width: 3.67125rem;
+        height: 0.63125rem;
+      } 
+      
+      & .pin-arrow {
+        position: absolute;
+        width: 2.205625rem;
+        height: 2.671875rem;
+      }
+  
+      & .bookmark-arrow {
+        position: absolute;
+        width: 3.06rem;
+        height: 3.186875rem;
+      }
+  
+      & .arrow-text {
+        font-size: .5rem;
+      }
+      
+    }
+  }
+
+  .kit-images-wrapper:hover{
+    & .kit-images-animation{
+      & .pin {
+        left: 16%;
+      }
+          
+      & .bookmark-yellow {
+        top: 5%;
+        right: 19%;
+      }
+  
+      & .bookmark-purple {
+        top: 18%;
+        right: 9%;
+      }
+        
+      & .book-arrow {
+        top: 14%;
+        left: 18%;
+      } 
+      
+      & .pin-arrow {
+        left: 10%;
+        top: 58%;
+      }
+  
+      & .bookmark-arrow {
+        top: 70%;
+        right: 15%;
+      }
+  
+      & .book-text{
+        top: 9%;
+        left: 8%;
+      }
+      & .pin-text{
+        top: 54%;
+        left: 5%;
+      }
+  
+      & .bookmark-text{
+        top: 88%;
+        right: 15%;
+      }  
+  
     }
   }
 }
