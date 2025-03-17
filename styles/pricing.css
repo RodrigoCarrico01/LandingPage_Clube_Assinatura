@@ -14,4 +14,119 @@
   padding-bottom: var(--padding-bottom);
   
   border: 1px solid purple;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-title{
+  font-size: 2rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+
+.pricing-card-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-inline: auto;
+  
+
+  & .pricing-card{
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    padding-bottom: 1.75rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 1px solid var(--shape-stroke);
+    background-color: #000f1f77;
+    border-radius: 1.5rem;
+
+    width:18rem;
+    height:26rem;
+
+    & .top{
+      & header{
+        display: flex;
+        flex-direction: column;
+        & h4{
+          font-size: 1rem;
+          padding-bottom: 1.5rem;
+        }
+        & h3{
+          font-size: 2.5rem;
+          & .per-month{
+            font-size: 1rem;
+          }
+          & .per-year{
+            padding-top: .5rem;
+            display: flex;
+            flex-direction: row;
+            font-size: .875rem;
+            color: var(--text-label);
+          }
+        }
+      }
+  
+    }
+    & .bottom{
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      gap: 1.5rem;
+      & .pricing-card-content{
+        font-size: .75rem;
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        & li{
+          display: flex;
+          flex-direction: row;
+          gap: .75rem;
+          & img{
+            width: .875rem;
+            height: .875rem;
+          }
+        }
+      }
+  
+      & .button-secondary, & .button-primary{
+        width: 100%;
+      }
+    }
+
+
+  }
+
+  & .mensal h4, & .anual h4{
+    color: var(--blue-light);
+    font-size: 1rem;
+  }
+
+  & .semestral h4{
+    color: var(--pink-light);
+    font-size: 1rem;
+  }
+}
+
+@media (width <= 70em){
+  .pricing-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    & .pricing-card{  
+      & .bottom{
+        & .pricing-card-content{
+          font-size: .65rem;
+        }
+        & .button-secondary, & .button-primary{
+          width: 100%;
+        }
+      }
+    }
+  }
+  
 }
