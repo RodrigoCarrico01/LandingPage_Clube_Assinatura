@@ -1,9 +1,10 @@
 .hero-container{
   --padding-inline-base: 10rem;
-  --max-width: 90em;
+  --max-width: 80em;
   max-width: var(--max-width);
   width: calc(100% - var(--padding-inline-base) * 2);
   margin-inline: auto;
+  border: 1px solid red;
 }
 
 .hero{
@@ -21,10 +22,8 @@
   }
 
   & .hero-title{
-    --padding-bottom: 29.375rem;
 
     text-align: center;
-    padding-bottom: var(--padding-bottom);
     & h1{
       --padding-bottom: 2rem;
       padding-bottom: var(--padding-bottom);
@@ -65,7 +64,6 @@
     }
 
     & .hero-title{
-      --padding-bottom: 12.0625rem;
       & h1{
         --padding-bottom: 1rem;
         font-size: 1.75rem;
