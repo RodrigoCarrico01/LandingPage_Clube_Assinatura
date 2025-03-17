@@ -3,7 +3,7 @@
   --padding-bottom: 17.375rem;
 
   --padding-inline-base: 0;
-  --max-width: 90em;
+  --max-width: 80em;
 
   max-width: var(--max-width);
   width: calc(100% - var(--padding-inline-base) * 2);
