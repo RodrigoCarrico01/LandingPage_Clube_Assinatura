@@ -8,14 +8,25 @@
   margin-inline: auto;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
-  border: 1px solid green;
 }
+.blur-kit {
+  position: absolute;
+  z-index: -1;
+  top: 10rem;
+  width: 58.125rem;
+  height: 58.125rem;
+  border-radius: 58.125rem;
 
+  opacity: 0.5;
+  background: var(--pink-pink-low, #3f0f41);
+  filter: blur(300px);
+}
 .kit{
   display: flex;
   flex-direction: column;
   place-content: center;
   place-items: center;
+  position: relative;
 
   & .kit-title{
     display: flex;
@@ -199,6 +210,18 @@
 
 
 @media (width <= 70em){
+  .blur-kit {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 25rem;
+  
+    opacity: 0.5;
+    background: var(--pink-pink-low, #3f0f41);
+    filter: blur(120px);
+  }
   .kit-container{
     --padding-inline-base: 0;
     --max-width: 375px;

@@ -13,13 +13,23 @@
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
   
-  border: 1px solid purple;
-
   display: flex;
   flex-direction: column;
+  position: relative;
+
 
 }
+.blur-pricing {
+  z-index: -1;
+  position: absolute;
+  margin-inline: auto;
+  width: 90rem;
+  height: 50rem;
 
+  border-radius: 59rem;
+  background: var(--shape-base, #000f1f);
+  filter: blur(280px);
+}
 .pricing-title{
   font-size: 2rem;
   padding-bottom: 3.5rem;
@@ -33,7 +43,6 @@
   justify-content: space-around;
   gap: 1rem;
   margin-inline: auto;
-  position: relative;
   padding-top: var(--padding-top);
   
 
@@ -250,11 +259,23 @@
   }
 }
 
+
+
 @media (width <= 70em){
   .pricing-container{
     --padding-top: 6.5rem;
     --padding-bottom: 6.5rem;
     --max-width: 375px;
+  }
+  .blur-pricing {
+    position: absolute;
+    margin-inline: auto;
+    width: 375px;
+    height: 70rem;
+  
+    border-radius: 59rem;
+    background: var(--shape-base, #000f1f);
+    filter: blur(280px);
   }
   .pricing-card-wrapper{
     --padding-top: 3rem;

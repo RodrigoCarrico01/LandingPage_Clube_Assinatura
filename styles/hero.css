@@ -4,7 +4,6 @@
   max-width: var(--max-width);
   width: calc(100% - var(--padding-inline-base) * 2);
   margin-inline: auto;
-  border: 1px solid red;
   height: 59.25rem;
   position: relative;
   display: flex;
@@ -39,11 +38,15 @@
       font-size: 3rem;
       margin-inline: auto;
 
+      animation: fadeInUp 2s ease-in-out forwards;
+
     }
     & p{
       color: var(--text-label);
       font-size: 1.25rem;
       font-weight: 300;
+      animation: fadeInUp 2s 0.2s ease-in-out forwards;
+
     }
   }
   

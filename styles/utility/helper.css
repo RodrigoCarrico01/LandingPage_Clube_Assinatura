@@ -5,7 +5,11 @@
   display: none;
 }
 
-
+.pricing-bg{
+  background: url(../../assets/pricing-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .hero-bgc{
   z-index: -1;
   position: absolute;
@@ -13,6 +17,7 @@
   align-items: center;
   justify-content: center;
   height: 59.25rem;
+  animation: fadeInUp 1.6s ease-in-out forwards;
 }
 .footer-bgc{
   z-index: -1;

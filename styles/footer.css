@@ -9,7 +9,6 @@
   margin-inline: auto;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
-  border: 1px solid peru;
   display: flex; 
   flex-direction: row;
   justify-content: center;
