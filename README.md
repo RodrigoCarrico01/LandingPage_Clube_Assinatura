@@ -40,7 +40,8 @@ Tu podes visualizar o layout do projeto através [DESTE LINK](https://www.figma.
 
 ## Futuramente
 - Melhorar a estruturação do código para facilitar a manutenção e escalabilidade.
-- Criar containers já predefinidos para organizar melhor o layout e evitar reestruturações 
+- Criar containers já predefinidos para organizar melhor o layout e evitar reestruturações
+- Ajustar os BLURS ao centro da página.
 
 ## Licença
 
